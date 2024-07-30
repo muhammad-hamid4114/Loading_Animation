@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #00008bcb;
+}
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.load .loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.loader .loading {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+    animation: loadMe 0.7s ease infinite;
+}
+@keyframes loadMe{
+    0%{
+        width: 30px;
+        height: 30px;
+    }
+    50%{
+        width: 20px;
+        height: 20px;
+    }
+}
+.loader .loading.one{
+    animation-delay: 0.5s;
+}
+.loader .loading.two{
+    animation-delay: 0.7s;
+}
+.loader .loading.three{
+    animation-delay: 0.9s;
+}
+.loader .loading.four{
+    animation-delay: 1s;
+}
